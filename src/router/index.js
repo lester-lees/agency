@@ -17,5 +17,6 @@ export default new Router({
       name: 'roues',
       component: RouteLines
     }
-  ]
+  ],
+  mode: 'history'
 })

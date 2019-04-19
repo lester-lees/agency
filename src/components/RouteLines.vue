@@ -32,7 +32,7 @@
             </div>
             <div style="margin-bottom:10px; width:630px" id="tickets_number">
                 总价    ： <Input type="number" v-model="price" style="width: 120px;" />
-            </div>            
+            </div>
             <Button class="submit" type="primary" shape="circle">购买</Button>
         </div>
     </Layout>

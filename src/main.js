@@ -6,6 +6,7 @@ import router from './router'
 import axios from 'axios'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
+import Header from '@/components/Header'
 
 Vue.prototype.$http = axios
 Vue.use(iView)
@@ -17,6 +18,6 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
-  components: { App },
+  components: { App, Header },
   template: '<App/>'
 })
