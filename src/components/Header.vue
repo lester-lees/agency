@@ -1,11 +1,14 @@
 <template>
     <nav>
         <ul>
-            <li>
-                <router-link to="/">代理购票</router-link>
+            <li class="pull-left">
+                <router-link to="/routes">代理购票</router-link>
                 <router-link to="/helloworld">Hello World</router-link>
             </li>
-        </ul>
+            <li class="pull-right">
+                <router-link to="/login">登录</router-link>
+            </li>
+        </ul>        
     </nav>
 </template>
 
@@ -35,6 +38,6 @@ a{
 nav{
     padding: 30px 0px;
     margin-bottom: 40px;
-    background-color: crimson;
+    background-color: #aaa;
 }
 </style>
