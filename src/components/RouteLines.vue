@@ -28,10 +28,17 @@
             <div style="margin-bottom:10px; width:630px" id="tickets_number">
                 购票数量： <Input type="number" v-model="tickets" style="width: 120px;" />
             </div>
+<<<<<<< HEAD
             <div style="margin-bottom:10px; width:630px" id="tickets_price">
                 总价    ： <Input type="number" v-model="total_price" style="width: 120px;" readonly/>
             </div>            
             <Button class="submit" type="btn primary" shape="circle" v-on:click="submit">购买</Button>
+=======
+            <div style="margin-bottom:10px; width:630px" id="tickets_number">
+                总价    ： <Input type="number" v-model="price" style="width: 120px;" />
+            </div>
+            <Button class="submit" type="primary" shape="circle">购买</Button>
+>>>>>>> cdfff3635f3edd38127b385ce708455353d06cd4
         </div>
     </Layout>
   </div>
