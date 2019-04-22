@@ -7,6 +7,7 @@ import axios from 'axios'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
 
+axios.defaults.baseURL = 'http://192.168.0.187:8009'
 Vue.prototype.$http = axios
 Vue.use(iView)
 
