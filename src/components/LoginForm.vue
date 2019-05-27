@@ -38,7 +38,7 @@ export default {
       type: Array,
       default: () => {
         return [
-          { required: true, message: '密码不能为空', trigger: 'blur' }
+          {required: true, message: '密码不能为空', trigger: 'blur'}
         ]
       }
     }
@@ -74,7 +74,4 @@ export default {
 }
 </script>
 
-
-<style>
-
-</style>
+<style></style>

@@ -10,7 +10,7 @@
             <li class="pull-right">
                 <router-link to="/login">登录</router-link>
             </li>
-        </ul>        
+        </ul>
     </nav> -->
 
     <Menu mode="horizontal" :theme="theme1" active-name="1" @on-select="onMenuSelect">
@@ -35,24 +35,24 @@
             <Icon type="ios-construct" />
             用户登录
             <router-link to="/login">用户登录</router-link>
-        </MenuItem>        
-    </Menu> 
-   
+        </MenuItem>
+    </Menu>
+
 </template>
 
 <script>
 export default{
   name: 'myheader',
-  methods:{  
-    onMenuSelect:function(name){  
-        console.log(name," is clicked!");  
-        if(name==="login"){
-            this.$router.push('/login')  
-        }else if( name === 'routes') {
-            this.$router.push('/routes') 
-        } 
-    }  
-}    
+  methods: {
+    onMenuSelect: function (name) {
+      console.log(name, ' is clicked!')
+      if (name === 'login') {
+        this.$router.push('/login')
+      } else if (name === 'routes') {
+        this.$router.push('/routes')
+      }
+    }
+  }
 }
 </script>
 

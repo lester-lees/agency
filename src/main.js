@@ -9,7 +9,7 @@ import 'iview/dist/styles/iview.css'
 import Header from '@/components/Header'
 import Vuex from 'vuex'
 
-axios.defaults.baseURL = 'http://192.168.0.187:8009'
+axios.defaults.baseURL = 'http://192.168.0.187:8069'
 Vue.prototype.$http = axios
 Vue.use(iView)
 Vue.use(Vuex)

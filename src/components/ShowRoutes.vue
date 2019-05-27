@@ -13,8 +13,8 @@ export default {
   name: 'ShowRoutes',
   data () {
     return {
-        routes: null,
-        current_route: null
+      routes: null,
+      current_route: null
     }
   },
   mounted () {
@@ -30,9 +30,9 @@ export default {
         return i.line_code === val
       })
       r = r && r[0] || null
-      this.$emit("route_change", r)
+      this.$emit('route_change', r)
     }
-  }  
+  }
 }
 </script>
 

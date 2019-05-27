@@ -33,7 +33,7 @@ export default new Router({
       },
       // component: () => import('@/view/login/login.vue')
       component: Login
-  },     
+    }
   ],
   mode: 'history'
 })
