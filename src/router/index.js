@@ -4,11 +4,17 @@ import HelloWorld from '@/components/HelloWorld'
 import RouteLines from '@/components/RouteLines'
 // import Login from '@/components/Login'
 import Login from '@/components/Login'
+import Pay from '@/components/Pay'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/payment',
+      name: 'payment',
+      component: Pay
+    },    
     {
       path: '/report',
       name: 'report',

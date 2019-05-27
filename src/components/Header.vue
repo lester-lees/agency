@@ -30,7 +30,9 @@
             <MenuItem name="report-1">订单明细</MenuItem>
             <MenuItem name="report--2">销售报表</MenuItem>
             <MenuItem name="report--3">佣金返还</MenuItem>
+            
         </Submenu>
+        <MenuItem name="payment">完成支付</MenuItem>      
         <MenuItem name="login">
             <Icon type="ios-construct" />
             用户登录
@@ -50,6 +52,8 @@ export default{
         this.$router.push('/login')
       } else if (name === 'routes') {
         this.$router.push('/routes')
+      }else if (name === 'payment') {
+        this.$router.push('/payment')
       }
     }
   }
@@ -77,5 +81,8 @@ nav{
     padding: 30px 0px;
     margin-bottom: 40px;
     background-color: #aaa;
+}
+ul.ivu-menu li:last-child{
+    float:right;
 }
 </style>
