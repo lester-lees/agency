@@ -32,6 +32,7 @@ export default {
       this.handleLogin({ userName, password }).then(res => {
         this.getUserInfo().then(res => {
           this.$router.push('/routes')
+          // this.$router.push({name: 'home'})
         })
       })
       console.info('===== in handleSubmit 2 =====')

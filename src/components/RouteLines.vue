@@ -81,12 +81,16 @@ export default {
       })
     },
     submit () {
+
+      if (!this.total_price){
+        return
+      }
       let url = '/agency/api/create_order_info/'
       let data = {org_no: 'FIX', total_price: this.total_price, current_route: this.current_route, busInfo: this.current_bus,
         tickets: this.tickets, departure_date: this.departure_date}
 
       this.$http.post(url, data).then(res => {
-
+        this.$router.push({name: 'payment', params: data})
       })
     }
   },

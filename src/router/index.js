@@ -39,7 +39,12 @@ export default new Router({
       },
       // component: () => import('@/view/login/login.vue')
       component: Login
-    }
+    },
+    {
+      path: '/home',
+      name: 'home',
+      component: RouteLines
+    }    
   ],
   mode: 'history'
 })
